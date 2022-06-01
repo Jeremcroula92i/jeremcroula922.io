@@ -12,12 +12,7 @@ div.steps__card {
     white-space: nowrap;
     @include card_hover;
 
-    &:hover { 
-        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-        background: linear-gradient(#9356DC, #FF79DA);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;        
+    &:hover {
         background-color: rgba($color-primary, 0.2);
         color: $color-primary;
     }
