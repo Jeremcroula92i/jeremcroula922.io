@@ -1,0 +1,109 @@
+// Flexbox
+
+@mixin flex ($justify: center, $items: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $items;
+    flex-direction: $direction;
+}
+
+// Ombres portées 
+
+@mixin shadow {
+    box-shadow: 5px 5px 10px rgba($color: black, $alpha: 0.2);
+}
+
+// Titres
+
+@mixin main_title {
+    font-family: $serif;
+    font-size: 1.8rem;
+    color: black;
+}
+
+@mixin second_title ($size, $weight) {
+    font-family: $sans-serif;
+    color: black;
+    font-weight: $weight;
+    font-size: $size;
+    margin-bottom: 5px;
+}
+
+// Blocs
+
+@mixin bloc__content {
+        @include flex(space-between, center, column);
+        margin: $margin-bloc-cards;
+    }
+
+
+@mixin bloc ($bg: $white) {
+    background-color: $bg;
+    padding: 30px 10px 30px 10px; 
+}
+
+// Boutons
+
+@mixin btn__shape {
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+@mixin heart ($color: transparent) {
+    font-size: 1.8rem;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    color: $color;
+  }
+  
+  @mixin heart__gradient {
+    @include heart;
+    display: block;
+    background: $color-gradient;
+    -webkit-background-clip : text;
+}
+
+// cards
+
+@mixin card_hover {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+    
+}
+
+// Responsive
+
+@mixin tablet-screen {
+    @media screen and (min-width:map-get($breakpoints, tablet)) {
+        @content;
+    }
+    
+}
+
+@mixin desktop-screen {
+    @media screen and (min-width:map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin screen-max-width ($screen) {
+    max-width: $screen;
+    margin: auto;
+}
+
+// spinner
+
+@mixin spinner-food ($color, $delay, $index) {
+    font-size: 80px;
+    color: $color;
+    animation-delay: $delay;
+    z-index: $index;
+}
+
+
