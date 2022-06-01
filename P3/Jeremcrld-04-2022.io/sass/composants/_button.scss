@@ -36,8 +36,12 @@
 
 // Bouton coeur
 
-.checkbox__heart {
-
+.checkbox__heart {  
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     position: absolute;
     right: 0;
     bottom: 0;
