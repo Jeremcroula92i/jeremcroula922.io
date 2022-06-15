@@ -195,7 +195,7 @@ div.steps__card {
     
     input[type="checkbox"]:checked ~ .menu__card--select {
 
-        width: 25%;
+        width: 20%;
     
         .selected {
             transform: rotate(0);
@@ -220,7 +220,7 @@ div.steps__card {
     &--price {
 
         color: black;
-        padding: 12px;
+        padding: 10px;
         font-weight: $bold;
         margin: 0px 5px 0px 5px;
     }
