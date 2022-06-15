@@ -229,15 +229,15 @@ div.steps__card {
     &--select {
 
         @include flex;
-        width: 0;
-        height: 75px;
+        width: 20%;
+        height: 2rem;
         background-color: $color-tertiary;
         transition: width 400ms ease-out; // apparition du bloc selectionné
 
         .selected {
             color: $white;
             font-weight: $bold;
-            font-size: 2rem;
+            font-size: small;
             transform: rotate(270deg);
             transition: transform 300ms linear 50ms;
         } // rotation de l'icône
