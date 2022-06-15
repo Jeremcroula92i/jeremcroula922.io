@@ -196,6 +196,7 @@ div.steps__card {
     input[type="checkbox"]:checked ~ .menu__card--select {
 
         width: 20%;
+        font-size: small;
     
         .selected {
             transform: rotate(0);
