@@ -23,7 +23,9 @@
         }
 
         @include desktop-screen {
-            display: none; // retire la flèche retour pour les pc
+            display: flex;
+                max-widht: 1992px(min-widht:$brekpoints;$destokp);
+            margin:0
         }
     }  
 
