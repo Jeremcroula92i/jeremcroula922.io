@@ -1,0 +1,50 @@
+.search-bar{
+  background: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh 0;
+  -webkit-box-shadow: inset 0 5px 5px -3px #CFCFCF;
+  box-shadow: inset 0 5px 5px -3px #CFCFCF;
+  input{
+    border: none;
+    background: #EAEAEA;
+    font-size: 4vw;
+    @include small{
+      font-size: 3vw;
+    }
+    @include medium{
+      font-size: 1.5vw;
+    }
+    @include large{
+      font-size: 1.2vw;
+    }
+    &::placeholder {
+      color: #353535;
+    }
+  }
+  i{
+    color:#353535;
+    padding-left: 10vw;
+    padding-right: 4vw;
+    font-size: 4vw;
+    @include small{
+      font-size: 3vw;
+    }
+    @include medium{
+      font-size: 1.5vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+    @include large{
+      font-size: 1.5vw;
+      padding-left: 1vw;
+      padding-right: 0.5vw;
+    }
+  }
+
+}
+
+
+
+

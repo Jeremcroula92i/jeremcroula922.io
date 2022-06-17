@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+    &:visited{
+      text-decoration: none;
+      color: black;
+      }
+    h1{
+      color: black;
+      margin: 2vh auto;
+      @include title-font;
+      font-size: 8.5vw;
+      @include small{
+        font-size: 5vw;
+      }
+      @include medium{
+        font-size: 4vw;
+      }
+    }
+  }
+  .back-btn{
+    position: absolute;
+    left: 6vw;
+  }
+  i {
+    transform: scale(1.2);
+    font-size: 4vw;
+    @include medium{
+      font-size: 3vw;
+    }
+    @include large{
+      font-size: 2vw;
+    }
+  }
+}
+
+
