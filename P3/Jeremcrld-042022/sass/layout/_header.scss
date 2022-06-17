@@ -23,8 +23,7 @@
         }
 
         @include desktop-screen {
-            display: flex;
-                max-widht: 1992px(min-widht:$brekpoints;$destokp);
+            @inclus flex(center, center, row; max-widht: 1992px(min-widht:$brekpoints;$destokp);
             margin:0
         }
     }  
