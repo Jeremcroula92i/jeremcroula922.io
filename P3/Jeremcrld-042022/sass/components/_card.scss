@@ -271,7 +271,7 @@
   &:hover .small-card--selected, &:active .small-card--selected{
     width: 20vw;
     @include small{
-      width: 20vw;
+      width: 13vw;
     }
     @include medium{
       width: 20vw;
