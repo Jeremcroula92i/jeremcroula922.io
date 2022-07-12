@@ -271,13 +271,13 @@
   &:hover .small-card--selected, &:active .small-card--selected{
     width: 20vw;
     @include small{
-      width: 13vw;
+      width: 20vw;
     }
     @include medium{
-      width: 10vw;
+      width: 20vw;
     }
     @include large{
-      width: 7vw;
+      width: 20vw;
     }
     i{
       animation: spin 0.4s both ease-in-out;
