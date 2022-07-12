@@ -269,15 +269,15 @@
     }
   }
   &:hover .small-card--selected, &:active .small-card--selected{
-    width: 20vw;
+    width: 19vw;
     @include small{
       width: 13vw;
     }
     @include medium{
-      width: 20vw;
+      width: 19vw;
     }
     @include large{
-      width: 20vw;
+      width: 19vw;
     }
     i{
       animation: spin 0.4s both ease-in-out;
