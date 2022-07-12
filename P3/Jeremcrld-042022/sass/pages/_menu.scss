@@ -45,13 +45,13 @@
   border-radius: 10vw 10vw 0 0;
   background: $color-grey;
   @include medium{
-    margin: 7vw 1vw -3vw;
+    margin: 7vw 0vw -3vw 0vw
     bottom: 10vh;
     border-radius: 5vw 5vw;
     padding-bottom: 10vw;
   }
   @include large{
-    margin: 7vw 1vw -3vw;
+    margin: 7vw 0vw -3vw 0vw;
     bottom: 10vh;
     border-radius: 2.5vw 2.5vw;
     padding-bottom: 2.5vw;
